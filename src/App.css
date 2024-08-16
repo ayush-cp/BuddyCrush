@@ -1,0 +1,864 @@
+.main-container{
+    width: 100%;
+    min-height: 100dvh;
+    height: max-content;
+    /* background-color: rgb(0, 3, 48); */
+    background-color: rgb(216, 219, 216);
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    
+}
+
+/* Login and signup */
+.signup{
+    width: 30vw;
+    height: 70vh;
+    background-color: rgb(255, 255, 255)  ;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+.login{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loginContainer h1{
+    font-size: 2.5rem;
+    font-family: poppins;
+    margin-bottom: 10px;
+}
+.loginGoogle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: whitesmoke;
+    padding: 5px 10px;
+    border: 1px gray solid;
+    box-shadow: 0 2px 2px gray;
+    cursor: pointer;
+}
+.loginGoogle img{
+    width: 35px;
+}
+.loginGoogle span{
+    font-size: 1.3rem;
+    font-family: sans-serif;
+}
+
+/* login and signup finish */
+
+/* navbar */
+.navbar{
+    width: 100%;
+    height: 13vh;
+    min-height: 80px;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.mainNav{
+    width: 40%;
+    min-width: 400px;
+    background-color: white;
+    height: 70%;
+    border-radius: 20px;
+    padding: 10px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbarLink{
+    text-decoration: none;
+    color: black;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    width: 50px;
+    /* min-width: 20px; */
+}
+.logo span{
+    font-size: 1.2rem;
+    font-family: poppins;
+    font-weight: 800;
+}
+.userName{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    /* background-color: green; */
+    font-size: 2rem;
+    font-family: poppins;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+.userName img{
+    width: 30px;
+    height: 30px;
+}
+
+/* navbar finish */
+.dashboard{
+    /* margin-top: 30px; */
+    width: 100%;
+    min-height: 100vh;
+    height: max-content;
+    /* background-color: blue; */
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    justify-content: start;
+    padding-left: 5vw;
+    align-items: center;
+
+}
+.dashboardElements{
+    width: 100%;
+    min-height: 100vh;
+    height: max-content;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 10px;
+    
+}
+/* habit */
+.habit{
+    height: 58vh;
+    width: 23vw;
+    min-width: 300px;
+    min-height: 400px;
+    background-color: rgb(235, 235, 235);
+    border-radius: 20px;
+
+}
+.mainHabit{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 15px;
+}
+.habitTop{
+    width: 100%;
+    height: 13%;
+    /* background-color: aquamarine; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.habitInfo{
+    width: 55%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.habit span{
+    font-size: 1.1rem;
+    font-family: poppins;
+    font-weight: 600;
+}
+.habitInfo img{
+    width: 40px;
+    height: 40px;
+}
+.habitCount{
+    width: 35%;
+    height: 30px;
+    background-color: rgb(201, 201, 201);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.habitCount span{
+    font-size: 1rem;
+}
+.habitCount img{
+    width: 20px;
+    height: 20px;
+}
+
+.habitAdd{
+    width: 40px;
+    height: 40px;
+    background-color: rgb(251, 123, 197);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.habitAdd img{
+    width: 23px;
+    height: 23px;
+}
+/* habit nav */
+.habitNav{
+    width: 100%;
+    height: 10%;
+}
+.habitMainNav{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(229, 229, 229, 0.562);
+    border-radius:100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.habitMainNav div{
+    width: max-content;
+    height: 60%;
+    /* background-color:burlywood; */
+    padding: 0 5px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    /* pointer-events:/; */
+    -webkit-user-select: none; /* Safari */        
+-moz-user-select: none; /* Firefox */
+-ms-user-select: none; /* IE10+/Edge */
+user-select: none; /* Standard */
+}
+.active{
+    background-color: rgb(202, 201, 202);
+}
+.habitMainNav div img{
+    width: 15px;
+    margin-right: 5px;
+}
+.habitMainNav div span{
+    font-size: 0.8rem;
+    color: rgb(113, 112, 112);
+    font-weight: 400;
+}
+.habitMainNav div:hover span{
+    color: black;
+}
+.habitMainNav div:active{
+    background-color: rgb(179, 177, 178);
+}
+/* habit nav complete */
+
+/* habit task */
+.habitTask{
+    width: 100%;
+    height: 78%;
+    /* background-color: salmon; */
+    position: relative;
+}
+.habitComplete{
+    width: 100%;
+    height: 6vh;
+    /* background-color: rgb(218, 255, 243); */
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    bottom: 10px;
+    align-items: center;
+}
+.habitComponents{
+    width: 100%;
+    height: 90%;
+    /* background-color: blueviolet; */
+}
+.habitCompleteButton{
+    height: 80%;
+    width: 100%;
+    background-color: rgb(7, 246, 246);
+    border-radius: 20px;
+    border: none;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+}
+.habitCompleteButton:hover{
+    background-color: rgb(2, 199, 199);
+}
+/* activity status start */
+.activityStatus{
+    width: 100%;
+    height: 100%;
+    /* background-color: rgb(192, 191, 189); */
+    display: flex;
+    flex-direction: column;
+}
+.activityProfile{
+    width: 100%;
+    height: 18%;
+    /* background-color: rgb(124, 75, 11); */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.activityUser{
+    width: 35px;
+    height: 35px;
+    background-color: green;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    font-family: sans-serif;
+    color: whitesmoke;
+    margin-right: 20px;
+}
+.activityUsername span{
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+.activityUsername p{
+    font-size: 0.8rem;
+    font-family: sans-serif;
+    color: gray;
+    letter-spacing: 1px;
+}
+
+/* leaderboard  */
+.leaderboardRank{
+    width: 100%;
+    height: 100%;
+    /* background-color: aquamarine; */
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+
+}
+.leaderboardProfile{
+    width: 100%;
+    height: 18%;
+    /* background-color: gray; */
+    border-bottom: 1px solid gray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5px;
+}
+.leaderboardMedal{
+    width: 25px;
+}
+.leaderboardPeople{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.leaderboardPeopleInitial{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: hotpink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    color: white;
+    font-family: sans-serif;
+    margin-right: 10px;
+}
+.leaderboardPeople span{
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+/* leaderboard finish */
+.about{
+    width: 100%;
+    height: 100%;
+    /* background-color: aquamarine; */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow-y: auto;
+    padding-bottom: 30px;
+
+
+}
+.aboutGroup{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.aboutGroup .aboutDescription{
+    /* width: 100%; */
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+.aboutGroup .aboutCreated{
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: gray;
+}
+.aboutMembers{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    
+
+}
+.aboutCountMembers{
+    display: flex;
+    align-content: center;
+    width: 50%;
+    justify-content: space-evenly;
+    align-items: baseline;
+    font-weight: 500;
+    font-family: sans-serif;
+}
+.aboutCountMembers img{
+    width: 18px;
+    height: 18px;
+    margin-right: 5px;
+}
+.aboutCountMembers span{
+    font-size: 1rem;
+    margin-right: 2px;
+}
+.aboutMemberList{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    /* overflow-y: auto; */
+}
+.logOutButton{
+    width: 80px;
+    padding: 10px;
+    background-color: rgb(248, 220, 220);
+    border-radius: 20px;
+    font-size: 1rem;
+    font-family: sans-serif;
+    cursor: pointer;
+}
+.aboutInfo{
+    width: 100%;
+    /* background-color: rgb(11, 128, 128); */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 5px;
+}
+.aboutInfoProfile{
+    width: 30px;
+    height: 30px;
+    background-color: green;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.aboutInfo span{
+    font-size: 1rem;
+    font-weight: 400;
+}
+/* about finish */
+
+/* discover  */
+.discover{
+    width: 22vw;
+    height: 58vh;
+    min-width: 300px;
+    min-height: 400px;
+    /* background-color: aquamarine; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+.discoverGroups,
+.discoverLink
+{
+    width: 100%;
+    height: 45%;
+    background-color: rgba(200, 198, 198,0.4);
+    /* opacity: 0.5; */
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0px 0px 5px rgb(208, 208, 208);
+    cursor: pointer;
+}
+.discoverGroups:hover,
+.discoverLink:hover{
+    background-color: rgb(170, 239, 253);
+}
+.discoverLink {
+    text-decoration: none; /* Removes the default link underline */
+    color: inherit; /* Inherits text color to match parent */
+    display: block; /* Makes the link a block element */
+    width: 100%;
+    height: 45%;
+    /* height: 100%; */
+    /* background-color: aqua; */
+  }
+  
+  .discoverNewGroups {
+    width: 100%;
+    height: 100%;
+    display: flex; /* Assuming you're using flexbox for layout */
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    
+    /* height: 130%; */
+
+    /* Add other necessary styles to match your design */
+  }
+  
+.discoverGroupIcon,
+.discoverNewGroupsIcon{
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.discoverGroupIcon img,
+.discoverNewGroupsIcon img{
+    width: 55%;
+}
+.discoverGroups span,
+.discoverNewGroups span{
+    font-size: 1.1rem;
+    font-weight: 600;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    
+}
+/* discover ends  */
+
+/* create new group  */
+
+.newGroup{
+    width: 100%;
+    height: max-content;
+    background-color: rgb(234, 245, 231);
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow-y: auto;
+    
+}
+.newGroupMain{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 150px;
+
+}
+.newGroupMain form{
+    width: 45%;
+    height: 100%;
+    /* background-color: gray; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-evenly; */
+}
+.newGroupBack{
+    width: 90px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.newGroupBack:hover{
+    background-color: rgb(187, 183, 183);
+    border-radius: 30px;
+
+}
+.newGroupLink{
+    text-decoration: none;
+    color: black;
+}
+.newGroupBack img{
+    width: 25px;
+}
+.newGroupBack span{
+    font-size: 1rem;
+    font-family: poppins;
+    font-weight: 600;
+}
+.newGroupHeading{
+    font-family: poppins;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.newGroupName{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+}
+.newGroupName label{
+    font-size: 1rem;
+    font-family: sans-serif;
+    font-weight: 300;
+}
+.newGroupName input{
+    width: 100%;
+    height: 50px;
+    border-radius: 30px;
+    padding: 2px 10px;
+    font-size: 1rem;
+    outline: none;
+    text-transform: capitalize;
+    margin: 10px 0;
+}
+.newGroupDesc{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+.newGroupDesc label{
+    font-size: 1rem;
+    font-family: sans-serif;
+    font-weight: 300;
+}
+.newGroupDesc textarea{
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
+    padding: 15px 10px;
+    font-size: 1rem;
+    outline: none;
+    margin: 10px 0;
+}
+.newGroupCategory{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+}
+.newGroupCategory label{
+    font-size: 1rem;
+    font-family: sans-serif;
+    margin-bottom: 15px;
+}
+.newGroupCategory select{
+    height: 45px;
+    font-size: 1rem;
+    outline: none;
+    font-weight: 600;
+    border-radius: 30px;
+    padding: 2px 10px;
+}
+.newGroupCategory option{
+    box-shadow: 2px 2px 5px black;
+
+}
+.newGroupSubmit{
+    width: 100%;
+    height: 50px;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    font-family: sans-serif;
+    font-weight: 600;
+    color: white;
+    background-color: rgb(6, 179, 179);
+    cursor: pointer;
+    margin-top: 40px;
+}
+.newGroupSubmit:hover{
+    background-color: rgb(23, 238, 238);
+
+}
+
+/* new Grup over  */
+
+/* discove groups start  */
+
+.discoverGroupsSection{
+    width: 100%;
+    height: max-content;
+    min-height: 100vh;
+    /* background-color: gray; */
+    display: flex;
+    justify-content: center;
+}
+.groupSectionMain{
+    width: 80%;
+    height: max-content;
+    min-height: 100vh;
+    /* background-color: gray; */
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 10px;
+}
+.discoverGroupLink{
+    text-decoration: none;
+    color: black;
+}
+.discoverGroupBack{
+    width: 100px;
+    padding: 12px 0;
+    /* height: max-content; */
+    /* background-color: white; */
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.discoverGroupBack:hover{
+    background-color: rgb(209, 209, 209);
+}
+.discoverGroupBack img{
+    width: 20px;
+}
+.discoverGroupBack span{
+    font-family: sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.groupSectionMain h1{
+    text-align: center;
+    font-family: poppins;
+}
+.groupCategory{
+    height: max-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    
+}
+.discoverGroupCategory{
+    width: 100%;
+    height: 42vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 10px;
+    /* background-color: antiquewhite; */
+
+}
+.discoverGroupCategory__header{
+    font-size: 1.1rem;
+    font-family: sans-serif;
+    width: max-content;
+    border-radius: 20px;
+    padding: 4px 10px;
+    background-color: pink;
+    
+}
+.discoverGroupCategory__content{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    gap: 20px;
+    overflow-x: auto;
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+    
+}
+.discoverGroupCategory__content::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+.discoverGroupItem{
+    width: 250px;
+    height: 250px;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: rgb(246, 246, 246);
+    box-shadow: 1px 1px 1px rgb(166, 164, 164);
+}
+.groupItemName{
+    width: 100%;
+    overflow-x: auto;
+
+}
+.discoverGroupItem h2{
+    text-wrap: nowrap;
+}
+.groupItemInfo{
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: sans-serif;
+}
+.groupItemInfo img{
+    width: 18px;
+    margin-right: 3px;
+}
+.groupItemInfo span{
+    font-weight: 700;
+}
+.groupItemCreated{
+    font-size: 0.8rem;
+    width: max-content;
+    margin-left: 10px;
+    padding: 1px 10px ;
+    background-color: yellow;
+    border-radius: 10px;
+}
+.groupItemDesc{
+    width: 100%;
+    margin-top:10px;
+    position: relative;
+    height: 65%;
+    /* background-color: yellow; */
+}
+.groupItemDesc span{
+    font-family: sans-serif;
+    font-size: 0.9rem;
+}
+.groupItemJoin{
+    width: max-content;
+    display: flex;
+    align-items: center;
+    background-color:aqua;
+    padding: 5px 18px;
+    border-radius: 20px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+.groupItemJoin img{
+    width: 20px;
+}
+.groupItemJoin span{
+    font-size: 1rem;
+}
+
+
+@media (max-width: 480px){
+.mainNav{
+    width: 90%;
+    min-width: 90%;
+}
+}
